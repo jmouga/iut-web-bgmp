@@ -5,25 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/shop.css">
     <title>Tous les articles | DansTousSesEtats</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar-logo" href="">DansTousSesEtats</a>
+            <a class="navbar-logo" href="./">DansTousSesEtats</a>
             <ul class="navbar-menu">
-                <li><a href="">Link 1</a></li>
-                <li><a href="">Link 2</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">About</a></li>
                 <li><form action="./index.html"><button type="submit">Search</button><input type="text"></form></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="desc-section">
-            <div class="desc-conatainer">
+            <div class="desc-container">
                 <h1>Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores corrupti rerum beatae consectetur ex, illo magni esse a ipsa enim temporibus ullam in aspernatur dolore. Hic, adipisci aliquam? Vel, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rem. Tempore cum cupiditate asperiores corrupti ipsam earum harum totam necessitatibus reprehenderit odio dolores officia veniam qui, autem beatae veritatis unde?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores corrupti rerum beatae consectetur ex, illo magni esse a ipsa enim temporibus ullam in aspernatur dolore. Hic, adipisci aliquam? Vel, cupiditate!</p>
             </div>
+        </div>
+        <div class="container">
+            <div class="filter-container">
+                <form action="#">
+                    <div class="filter-container-title-block">
+                        <span>Filtres</span>
+                        <input type="reset" value="Clear">
+                    </div>
+                    <div class="filter-container-sort-block">
+                        <select name="sort" id="sort">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>  
+                    <div class="chekbox-filter-container">
+                        <fieldset>
+                            <legend>Catégories</legend>
+                            <div>
+                                <input type="checkbox" name="check1" id="check1"><label for="check1" class="checkbox-filter">Check 1</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="check2" id="check2"><label for="check2" class="checkbox-filter">Check 1</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Couleurs</legend>
+                            <div>
+                                <input type="checkbox" name="check3" id="check3"><label for="check3" class="checkbox-filter">Check 1</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="check4" id="check4"><label for="check4" class="checkbox-filter">Check 1</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="articles-container"></div>
+            <div></div>
         </div>
     </main>
 </body>

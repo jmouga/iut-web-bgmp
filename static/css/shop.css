@@ -1,0 +1,65 @@
+body {
+    overflow-x: hidden;
+}
+
+.desc-section {
+    width: 100vw;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.desc-container {
+    max-width: 500px;
+    padding-left: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-container h1 {
+    padding-bottom: 0.5em;
+}
+
+.desc-container p {
+    text-align: justify;
+    overflow-wrap: normal;
+}
+
+.container {
+    width: 100vw;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: yellow;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.chekbox-filter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (width < 850px) {
+
+    .desc-section {
+        background-color: #EFF2F6;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .desc-container {
+        align-items: center;
+        justify-content: center;
+        color: black;
+        padding: 2em !important;
+    }
+
+    .desc-container p {
+        text-align: center;
+    }
+
+}
