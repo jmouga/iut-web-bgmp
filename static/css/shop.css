@@ -3,7 +3,7 @@ body {
 }
 
 .desc-section {
-    width: 100vw;
+    width: 100%;
     padding-top: 3em;
     padding-bottom: 3em;
     background-color: black;
@@ -29,19 +29,69 @@ body {
 
 .container {
     width: 100vw;
-    padding-left: 10em;
-    padding-right: 10em;
     padding-top: 2em;
     padding-bottom: 2em;
     background-color: yellow;
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter-container-title-block {
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+}
+
+.filter-container-title-block div{
+    margin-left: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container-title-block input {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filter-container-sort-block {
+    display: flex;
+    width: 50vw;
+    flex-direction: row-reverse;
+}
+
+.filter-container-sort-block div{
+    padding: 0.5em;
+    margin-right: 10em;
 }
 
 .chekbox-filter-container {
     display: flex;
     flex-direction: column;
+    margin-left: 10em;
 }
+
+.articles-container {
+    padding: 1em;
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 
 @media all and (width < 850px) {
 
@@ -55,11 +105,19 @@ body {
         align-items: center;
         justify-content: center;
         color: black;
-        padding: 2em !important;
+        padding: 3em !important;
     }
 
     .desc-container p {
         text-align: center;
+    }
+
+    .filter-container-title-block div{
+        margin-left: 2em;
+    }
+    
+    .filter-container-sort-block div{
+        margin-right: 2em;
     }
 
 }
