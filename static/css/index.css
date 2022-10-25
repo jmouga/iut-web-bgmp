@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+}
+body{
+    background-color: white;
+}
+main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+header{
+    height: 75px;
+    background-color: white;
+    border-bottom: solid 1px black;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.navbar-logo{
+    text-decoration: none;
+    color: black;
+    font-size: 16pt;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.navbar-menu{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+}
+
+header li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+header li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-menu li:last-of-type{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.navbar-menu input[type=text]{
+    border: none;
+    margin: 0;
+    height: 30px;
+    position: absolute;
+    width: 20%;
+    margin-left: 30px;
+    color: grey;
+    font-size: 1em;
+    z-index: 20;
+    display: block;
+}
+.navbar-cart{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.navbar-cart li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.burger-button{
+    display: none;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+}
+.part{
+    width: 100%;
+    background-color: white;
+    margin: 60px 0 0 0;
+}
+.big-title{
+    padding: 5vh 10% 0 10%;
+    width: 80%;
+}
+.big-title h1{
+    font-size: 3.5em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.big-title p{
+    margin: 30px 0;
+    font-size: 1.5em;
+    line-height: 150%;
+    text-align: center;
+    color: grey;
+}
+.big-title a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 15px 50px;
+    border: solid 1px black;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.titleImg img{
+    width: 100%;
+}
+.logos{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.logos img{
+    max-height: 50px;
+    max-width: 20vw;
+    margin: 0 5px;
+}
+footer{
+    display: flex;
+    justify-content: left;
+    padding: 20px 10vw;
+}
+footer .footer-container{
+    padding: 10px;
+    width: 10vw;
+    max-height: 350px;
+}
+footer .newsletter{
+    width: 30vw;
+    min-width: 300px;
+}
+footer .newsletter h2{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+footer .newsletter div{
+    width: 90%;
+    margin-top: 20px;
+    border: solid 1px black;
+    padding: 10px;
+    position: relative;
+}
+.newsletter div input{
+    border: none;
+    width: 100%;
+}
+.newsletter div input:focus{
+    outline: none;
+}
+.newsletter div a{
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: grey;
+}
+.sitemap{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-container{
+    min-width: 80px;
+}
+.sitemap .footer-container span{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.sitemap .footer-container ul{
+    list-style: none;
+    line-height: 200%;
+    margin-top: 20px;
+}
+@media all and (max-width: 1200px){
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        background-color: black;
+    }
+    .navbar{
+        width: auto;
+    }
+    .navbar-logo{
+        margin-right: 0;
+        color: white;
+    }
+    .navbar-menu, .navbar-cart{
+        display: none;
+    }
+    .burger-button{
+        display: block;
+        font-size: 2.5em;
+        color: white;
+    }
+    .big-title{
+        padding: 0;
+        width: 80%;
+    }
+    .titleImg{
+        margin: 60px 0 0 0;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .sitemap{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .part{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    .big-title h1{
+        font-size: 2.3em;
+    }
+    .big-title p{
+        font-size: 1.3em;
+    }
+    .big-title p span{
+        display: none;
+    }
+    .titleImg{
+        margin: 60px 0 0 0;
+        width: 100%;
+    }
+    main{
+        margin: 0;
+        width: 100%;
+    }
+}
+@media all and (max-width: 300px) {
+    .navbar-logo{
+        display: none;
+    }
+}
