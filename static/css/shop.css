@@ -41,16 +41,18 @@ body {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 10em;
+    margin-right: 10em;
+    width: 100%;
 }
 
 .filter-container-title-block {
     display: flex;
-    width: 50vw;
+    width: 50%;
     flex-direction: row;
 }
 
 .filter-container-title-block div{
-    margin-left: 10em;
     display: flex;
     flex-direction: column;
 }
@@ -66,19 +68,17 @@ body {
 
 .filter-container-sort-block {
     display: flex;
-    width: 50vw;
+    width: 50%;
     flex-direction: row-reverse;
 }
 
 .filter-container-sort-block div{
     padding: 0.5em;
-    margin-right: 10em;
 }
 
 .chekbox-filter-container {
     display: flex;
     flex-direction: column;
-    margin-left: 10em;
 }
 
 .articles-container {
@@ -89,6 +89,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 
