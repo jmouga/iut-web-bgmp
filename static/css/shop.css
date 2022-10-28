@@ -76,7 +76,7 @@ body {
     padding: 0.5em;
 }
 
-.chekbox-filter-container {
+.checkbox-filter-block {
     display: flex;
     flex-direction: column;
 }
@@ -92,6 +92,24 @@ body {
     flex-grow: 1;
 }
 
+fieldset {
+    border: none;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.checkbox-filter {
+    display: block;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: white;
+    cursor: pointer;
+}
 
 
 @media all and (width < 850px) {
