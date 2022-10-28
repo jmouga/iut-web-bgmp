@@ -1,4 +1,6 @@
 /*Fichier contenant les éléments de css généraux*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,24 +11,32 @@ body {
     background-color: #EFF2F6;
 }
 
-.navbar{
+header{
     height: 75px;
-    width: 100vw;
-    background-color: black;
+    background-color: white;
+    border-bottom: solid 1px black;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px grey;
-    padding-left: 10em;
-    overflow-x: hidden;
+}
+.navbar{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .navbar-logo{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 16pt;
     font-weight: bolder;
-    margin-right: 20px;   
+    margin-right: 20px;
 }
 
 .navbar-menu{
@@ -35,11 +45,144 @@ body {
     flex-direction: row;
 }
 
-.navbar-menu li{
+header li{
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
-.navbar-menu li a{
+header li a{
     text-decoration: none;
-    color: #EFF2F6;
+    color: black;
+}
+.navbar-menu li:last-of-type{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.navbar-menu input[type=text]{
+    border: none;
+    margin: 0;
+    height: 30px;
+    position: absolute;
+    width: 20%;
+    margin-left: 30px;
+    color: grey;
+    font-size: 1em;
+    z-index: 20;
+    display: block;
+}
+.navbar-cart{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.navbar-cart li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.burger-button{
+    display: none;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+}
+footer{
+    display: flex;
+    justify-content: left;
+    padding: 20px 10vw;
+}
+footer .footer-container{
+    padding: 10px;
+    width: 10vw;
+    max-height: 350px;
+}
+footer .newsletter{
+    width: 30vw;
+    min-width: 300px;
+}
+footer .newsletter h2{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+footer .newsletter div{
+    width: 90%;
+    margin-top: 20px;
+    border: solid 1px black;
+    padding: 10px;
+    position: relative;
+}
+.newsletter div input{
+    border: none;
+    width: 100%;
+}
+.newsletter div input:focus{
+    outline: none;
+}
+.newsletter div a{
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: grey;
+}
+.sitemap{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-container{
+    min-width: 80px;
+}
+.sitemap .footer-container span{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.sitemap .footer-container ul{
+    list-style: none;
+    line-height: 200%;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 1200px){
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        background-color: black;
+    }
+    .navbar{
+        width: auto;
+    }
+    .navbar-logo{
+        margin-right: 0;
+        color: white;
+    }
+    .navbar-menu, .navbar-cart{
+        display: none;
+    }
+    .burger-button{
+        display: block;
+        font-size: 2.5em;
+        color: white;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .sitemap{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .navbar-logo{
+        display: none;
+    }
 }
