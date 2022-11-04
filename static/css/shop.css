@@ -96,21 +96,57 @@ fieldset {
     border: none;
 }
 
-input[type="checkbox"] {
-    opacity: 0;
-    height: 0;
-    width: 0;
+.checkbox-filter-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
+.checkbox-filter-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
 .checkbox-filter {
+    top: 0;
+    left: 0;
+    position: absolute;
     display: block;
     width: 20px !important;
     height: 20px !important;
     background-color: white;
-    cursor: pointer;
+    border: solid 1px #0D0D0D;
 }
 
+.checkbox-filter-container input:checked ~ .checkbox-filter {
+    background-color: white;
+}
+
+.checkbox-filter:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-filter-block input:checked ~ .checkbox-filter:after {
+    display: block;
+}
+  
+.checkbox-filter:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 @media all and (width < 850px) {
 
