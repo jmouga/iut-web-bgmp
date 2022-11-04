@@ -23,6 +23,21 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-black {
+    background-color: black;
+    border-bottom: solid 1px white;
+}
+
+.bg-black {
+    background-color: black;
+    color: white !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
 .navbar{
     height: 100%;
     width: 60%;
@@ -174,6 +189,7 @@ footer .newsletter div{
     }
     footer{
         flex-direction: column;
+        align-items: center;
     }
     .sitemap{
         width: 100%;
