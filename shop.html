@@ -35,51 +35,69 @@
         </div>
         <div class="container">
             <div class="filter-container">
-                <div class="filter-container-title-block">
-                    <div>
-                        <span>Filtres</span>
-                        <input type="reset" value="Clear">
+                <div class="filter-container-title-sort-block">
+                    <div class="filter-container-title-section">
+                        <div>
+                            <span><H2>Filters</H2></span>
+                            <input type="reset" value="Clear filters">
+                        </div>
                     </div>
-                </div>
-                <div class="filter-container-sort-block">
-                    <div>
-                        <select name="sort" id="sort">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
+                    <div class="filter-container-sort-section">
+                        <div>
+                            <select name="sort" id="sort">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
                     </div>
                 </div>  
                 <div class="checkbox-filter-block">
-                    <fieldset>
-                        <legend>Catégories</legend>
-                        <div>
+                    <div class="checkbox-filter-section-categories">
+                        <span><h3>Catégories</h3></span>
+                        <div class="checkbox-filter-categories-list">
                             <label class="checkbox-filter-container">Test 1
-                                <input type="checkbox" name="check1" id="check1">
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Test 1
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Test 1
+                                <input type="checkbox" name="categories">
                                 <span class="checkbox-filter"></span>
                             </label>
                         </div>
-                        <div>
-                            <label class="checkbox-filter-container">Test 1
-                                <input type="checkbox" name="check2" id="check2">
-                                <span class="checkbox-filter"></span>
+                    </div>
+                    <div class="checkbox-filter-section-color">
+                        <span><h3>Couleurs</h3></span>
+                        <div class="checkbox-filter-color-list">
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-orange"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-yellow"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-red"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-blue"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-green"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-grey"></span>
                             </label>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Couleurs</legend>
-                        <div>
-                            <label class="checkbox-filter-container">Test 1
-                                <input type="checkbox" name="check3" id="check3">
-                                <span class="checkbox-filter"></span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="checkbox-filter-container">Test 1
-                                <input type="checkbox" name="check4" id="check4">
-                                <span class="checkbox-filter"></span>
-                            </label>
-                        </div>
-                    </fieldset>
+                    </div>
                 </div>
                 <div class="articles-container">
                     <div class="article"></div>

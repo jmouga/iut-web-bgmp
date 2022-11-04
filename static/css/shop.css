@@ -31,7 +31,6 @@ body {
     width: 100vw;
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: yellow;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,33 +45,52 @@ body {
     width: 100%;
 }
 
-.filter-container-title-block {
+.filter-container-title-sort-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.filter-container-title-section {
     display: flex;
     width: 50%;
     flex-direction: row;
 }
 
-.filter-container-title-block div{
+.filter-container-title-section div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.filter-container-title-block input {
+.filter-container-title-section span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.filter-container-title-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.filter-container-title-section input {
     background: none;
     border: none;
     padding: 0;
     margin: 0;
     cursor: pointer;
     text-decoration: underline;
+    color: lightgray;
 }
 
-.filter-container-sort-block {
+.filter-container-sort-section {
     display: flex;
     width: 50%;
     flex-direction: row-reverse;
 }
 
-.filter-container-sort-block div{
+.filter-container-sort-section div{
     padding: 0.5em;
 }
 
@@ -80,6 +98,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.checkbox-filter-block h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 
 .articles-container {
     padding: 1em;
@@ -92,8 +116,23 @@ body {
     flex-grow: 1;
 }
 
-fieldset {
-    border: none;
+.checkbox-filter-section-categories {
+    margin-top: 20px;
+}
+
+.checkbox-filter-section-color {
+    margin-top: 20px;
+}
+
+.checkbox-filter-categories-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-filter-color-list {
+    margin-top: 20px;
+    width: 200px;
 }
 
 .checkbox-filter-container {
@@ -148,7 +187,86 @@ fieldset {
     transform: rotate(45deg);
 }
 
-@media all and (width < 850px) {
+.checkbox-filter-color-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkbox-filter-color-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-filter-color-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.checkbox-filter-color {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 25px !important;
+    height: 25px !important;
+    border: solid 1px #0D0D0D;
+    border-radius: 100%;
+}
+
+.cbfc-orange {
+    background-color: orange;
+}
+
+.cbfc-red {
+    background-color: red;
+}
+
+.cbfc-blue {
+    background-color: blue;
+}
+
+.cbfc-yellow {
+    background-color: yellow;
+}
+
+.cbfc-green {
+    background-color: green;
+}
+
+.cbfc-grey {
+    background-color: grey;
+}
+
+.checkbox-filter-color:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-filter-block input:checked ~ .checkbox-filter-color:after {
+    display: block;
+}
+  
+.checkbox-filter-color:after {
+    left: 9px;
+    top: 4.5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+@media all and (width < 1200px) {
 
     .desc-section {
         background-color: #EFF2F6;
@@ -167,12 +285,29 @@ fieldset {
         text-align: center;
     }
 
-    .filter-container-title-block div{
-        margin-left: 2em;
+
+    .filter-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 2em;
+    }
+
+    .checkbox-filter-color-list {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .checkbox-filter-categories-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+
+    .articles-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px
     }
     
-    .filter-container-sort-block div{
-        margin-right: 2em;
-    }
 
 }
