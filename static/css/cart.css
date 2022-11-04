@@ -1,0 +1,71 @@
+main {
+    margin-top: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.articles-list {
+    width: 50%;
+}
+
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.article-picture {
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+}
+
+.article-information {
+    height: 150px;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    margin-left: 10px;
+}
+
+.article-name {
+    width: 100%;
+}
+
+.article-size {
+    width: 100%;
+}
+
+.article-quantity {
+    width: 100%;
+}
+
+.article-price {
+    width: 50%;
+}
+
+.article-remove {
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+}
+
+.line {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.line:last-child {
+    display: none;
+}
+
+.order-summary {
+    width: 35%;
+}
