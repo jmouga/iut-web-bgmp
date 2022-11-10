@@ -311,11 +311,13 @@
 .article-picture {
     width: 100%;
     height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .article-picture img {
-    width: inherit;
     height: inherit;
+    margin: auto;
 }
 
 .article-name {
