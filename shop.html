@@ -10,19 +10,19 @@
     <title>Tous les articles | DansTousSesEtats</title>
 </head>
 <body>
-    <header>
+    <header class="nav-black">
         <nav class="navbar">
-            <a class="navbar-logo" href="./">DansTousSesEtats</a>
+            <a class="navbar-logo text-white" href="./">DansTousSesEtats</a>
             <ul class="navbar-menu">
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">About</a></li>
-                <li><span class="material-symbols-outlined">search</span><input type="text" placeholder="Search"></li>
+                <li><a class="text-white" href="./shop.html">Shop</a></li>
+                <li><a class="text-white" href="#">Stories</a></li>
+                <li><a class="text-white" href="#">About</a></li>
+                <li class="text-white"><span class="material-symbols-outlined">search</span><input class="bg-black" type="text" placeholder="Search"></li>
             </ul>
         </nav>
         <ul class="navbar-cart">
-            <li><span class="material-symbols-outlined">shopping_cart</span>&nbsp;&nbsp;3</li>
-            <li><a href="">Se connecter</a></li>
+            <li class="text-white"><span class="material-symbols-outlined">shopping_cart</span>&nbsp;&nbsp;3</li>
+            <li><a class="text-white" href="">Se connecter</a></li>
         </ul>
         <span class="material-symbols-outlined burger-button">menu_open</span>
     </header>
@@ -35,50 +35,160 @@
         </div>
         <div class="container">
             <div class="filter-container">
-                <div class="filter-container-title-block">
-                    <div>
-                        <span>Filtres</span>
-                        <input type="reset" value="Clear">
+                <div class="filter-container-title-sort-block">
+                    <div class="filter-container-title-section">
+                        <div>
+                            <span><h2>Filtres</h2></span>
+                            <input type="reset" value="Clear filters">
+                        </div>
                     </div>
-                </div>
-                <div class="filter-container-sort-block">
-                    <div>
-                        <select name="sort" id="sort">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
+                    <div class="filter-container-sort-section">
+                        <div>
+                            <select name="sort" id="sort">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
                     </div>
                 </div>  
-                <div class="chekbox-filter-container">
-                    <fieldset>
-                        <legend>Catégories</legend>
-                        <div>
-                            <input type="checkbox" name="check1" id="check1"><label for="check1" class="checkbox-filter">Check 1</label>
+                <div class="checkbox-filter-block">
+                    <div class="checkbox-filter-section-categories">
+                        <span><h3>Catégories</h3></span>
+                        <div class="checkbox-filter-categories-list">
+                            <label class="checkbox-filter-container">Test 1
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Test 1
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Test 1
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
                         </div>
-                        <div>
-                            <input type="checkbox" name="check2" id="check2"><label for="check2" class="checkbox-filter">Check 1</label>
+                    </div>
+                    <div class="checkbox-filter-section-color">
+                        <span><h3>Couleurs</h3></span>
+                        <div class="checkbox-filter-color-list">
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-orange"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-yellow"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-red"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-blue"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-green"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-grey"></span>
+                            </label>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Couleurs</legend>
-                        <div>
-                            <input type="checkbox" name="check3" id="check3"><label for="check3" class="checkbox-filter">Check 1</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="check4" id="check4"><label for="check4" class="checkbox-filter">Check 1</label>
-                        </div>
-                    </fieldset>
+                    </div>
                 </div>
                 <div class="articles-container">
-                    <div class="article"></div>
-                    <div class="article"></div>
-                    <div class="article"></div>
-                    <div class="article"></div>
-                    <div class="article"></div>
-                    <div class="article"></div>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <a href="product.html" class="article">
+                        <div class="article-picture"><img src="" alt=""></div>
+                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-size"><span>M</span></div>
+                        <div class="article-price"><span>99€</span></div>
+                    </a>
+                    <div class="show-more">
+                        <input type="button" value="Voir plus de résultats">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-container newsletter">
+            <h2>Inscrivez-vous à notre newsletter</h2>
+            <p>Soyez le premier à découvrir nos nouvelles humeurs, suivez notre evolution et profitez d'offres
+                spéciales, rien que pour vous.</p>
+            <div>
+                <input type="text" name="email" id="newsletter-email" placeholder="Entrez votre adresse e-mail.">
+                <a href="#">S'inscrire</a>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="footer-container">
+                <span>Liens 1</span>
+                <ul>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <span>Liens 2</span>
+                <ul>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <span>Liens 2</span>
+                <ul>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
