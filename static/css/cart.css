@@ -293,3 +293,15 @@ main {
     }
 
 }
+
+@media all and (width < 450px) {
+    
+    .article-information {
+        flex-direction: column;
+    }
+
+    .article-remove {
+        flex-direction: row;
+    }
+
+}
