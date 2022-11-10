@@ -253,11 +253,13 @@ main {
 .plus {
     font-size: 30px;
     color: #909090;
+    cursor: pointer;
 }
 
 .minus {
     font-size: 30px;
     color: #909090;
+    cursor: pointer;
 }
 
 @media all and (width < 1200px) {
