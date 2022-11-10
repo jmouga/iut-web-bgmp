@@ -64,6 +64,7 @@ header li{
     margin: 0 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 header li a{
@@ -75,17 +76,17 @@ header li a{
     align-items: center;
     z-index: 100;
 }
-.navbar-menu input[type=text]{
+nav input[type=text]{
     border: none;
     margin: 0;
     height: 30px;
     position: absolute;
-    width: 20%;
     margin-left: 30px;
     color: grey;
     font-size: 1em;
     z-index: 20;
     display: block;
+    top: 0;
 }
 .navbar-cart{
     list-style:none;
@@ -100,6 +101,40 @@ header li a{
 }
 .burger-button{
     display: none;
+}
+.burger-menu{
+    width: 100%;
+    top:75px;
+    left: 0;
+    background-color: #252525;
+    display: none;
+}
+.burger-menu.open{
+    display: block;
+}
+.burger-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style: none;
+    padding: 20px 0;
+}
+.burger-menu li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.burger-menu a, .burger-menu span, .burger-menu input[type=text]::placeholder{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.burger-menu input[type=text]{
+    background-color: #252525;
+    color: white;
+    width: 50%;
+    margin-left: 40px;
 }
 .material-symbols-outlined {
     font-variation-settings:

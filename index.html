@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Accueil | DansTousSesEtats</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./static/css/main.css">
     <link rel="stylesheet" href="./static/css/index.css">
 </head>
 <body>
@@ -16,16 +17,22 @@
         <ul class="navbar-menu">
             <li><a href="./shop.html">Boutique</a></li>
             <li><a href="#">Notre histoire</a></li>
-            <li><a href="#">Comment ça marche ?</a></li>
             <li><span class="material-symbols-outlined">search</span><input type="text" placeholder="Rechercher"></li>
         </ul>
     </nav>
     <ul class="navbar-cart">
-        <li><span class="material-symbols-outlined">shopping_cart</span>&nbsp;&nbsp;3</li>
+        <li><a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>&nbsp;&nbsp;3</li>
         <li><a href="">Se connecter</a></li>
     </ul>
-    <span class="material-symbols-outlined burger-button">menu_open</span>
+    <span class="material-symbols-outlined burger-button" id="burger-button">menu_open</span>
 </header>
+<nav class="burger-menu" id="burger-menu">
+    <ul>
+        <a href="./shop.html"><li>Boutique</li></a>
+        <a href="#"><li>Notre histoire</li></a>
+        <li><span class="material-symbols-outlined">search</span><input type="text" placeholder="Rechercher"></li>
+    </ul>
+</nav>
 <main>
     <div class="part big-title">
         <h1>Des pilules de qualité pour choisir votre humeur</h1>
@@ -54,7 +61,7 @@
         <p>Soyez le premier à découvrir nos nouvelles humeurs, suivez notre evolution et profitez d'offres
             spéciales, rien que pour vous.</p>
         <div>
-            <input type="text" name="email" id="newsletter-email" placeholder="Entrez votre adresse e-mail.">
+            <span>Entrez votre adresse mail.</span>
             <a href="#">S'inscrire</a>
         </div>
     </div>
@@ -95,5 +102,14 @@
         </div>
     </div>
 </footer>
+<script>
+    buttonburger = document.getElementById("burger-button");
+    menuburger = document.getElementById("burger-menu");
+
+    buttonburger.addEventListener('click', function (e) {
+        e.preventDefault()
+        menuburger.classList.toggle('open')
+    })
+</script>
 </body>
 </html>
