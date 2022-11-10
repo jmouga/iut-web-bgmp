@@ -43,7 +43,6 @@ main {
 }
 
 .article-information {
-    min-height: 150px;
     display: flex;
     flex-grow: 1;
     flex-flow: row wrap;
