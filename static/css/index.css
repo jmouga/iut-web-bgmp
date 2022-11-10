@@ -139,8 +139,7 @@ header li a{
     flex-wrap: wrap;
 }
 .logos img{
-    max-height: 50px;
-    max-width: 20vw;
+    width: 15vw;
     margin: 0 5px;
 }
 footer{
