@@ -204,6 +204,12 @@ main {
     font-size: 22px;
 }
 
+.order-information-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 @media all and (width < 1200px) {
 
     main {

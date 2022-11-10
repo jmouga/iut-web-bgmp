@@ -24,8 +24,15 @@
             <li class="text-white"><span class="material-symbols-outlined">shopping_cart</span>&nbsp;&nbsp;3</li>
             <li><a class="text-white" href="">Se connecter</a></li>
         </ul>
-        <span class="material-symbols-outlined burger-button">menu_open</span>
+        <span class="material-symbols-outlined burger-button" id="burger-button">menu_open</span>
     </header>
+    <nav class="burger-menu" id="burger-menu">
+        <ul>
+            <a href="./shop.html"><li>Boutique</li></a>
+            <a href="#"><li>Notre histoire</li></a>
+            <li><span class="material-symbols-outlined">search</span><input type="text" placeholder="Rechercher"></li>
+        </ul>
+    </nav>
     <main>
         <div class="articles-list">
             <h1>Votre panier</h1>
@@ -74,7 +81,14 @@
         <div class="order-information">
             <div class="order-information-title"><span>Informations de la commande</span></div>
             <span class="line"></span>
-            <div class="order-information-section"></div>
+            <div class="order-information-section">
+                <span>Politique de retour</span>
+                <label class="view-more">
+                    <input type="checkbox">
+                    <span class="view-more-form"></span>
+                </label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur debitis quia laboriosam quod ut a libero id alias laborum quae reprehenderit, pariatur dicta eos hic, placeat tempore deserunt provident?</p>
+            </div>
             <span class="order-information-line"></span>
             <div class="order-information-section"></div>
             <span class="order-information-line"></span>
@@ -127,5 +141,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        buttonburger = document.getElementById("burger-button");
+        menuburger = document.getElementById("burger-menu");
+    
+        buttonburger.addEventListener('click', function (e) {
+            e.preventDefault()
+            menuburger.classList.toggle('open')
+        })
+    </script>
 </body>
 </html>
