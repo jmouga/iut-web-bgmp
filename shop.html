@@ -35,8 +35,8 @@
     <main>
         <div class="desc-section">
             <div class="desc-container">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores corrupti rerum beatae consectetur ex, illo magni esse a ipsa enim temporibus ullam in aspernatur dolore. Hic, adipisci aliquam? Vel, cupiditate!</p>
+                <h1>Boutique d'humeurs et d'émotions</h1>
+                <p>Un petit coup de mou, une petite dépression ou l'envie de ressentir quelque chose de différent ? Vous trouverez ici, une large de gamme d'émotions ou d'humeurs vous permettant d'ajouter des nuances à votre vie.</p>
             </div>
         </div>
         <div class="container">
@@ -50,10 +50,15 @@
                     </div>
                     <div class="filter-container-sort-section">
                         <div>
-                            <select name="sort" id="sort">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
+                            <div class="sort-input-container">
+                                <label for="sort"><span>Trié par</span></label>
+                                <select name="sort" id="sort">
+                                    <option value="1">Popularité</option>
+                                    <option value="2">Alphabétique</option>
+                                    <option value="3">Prix</option>
+                                </select>
+                            </div>
+                            <span>1003 produits affichés</span>
                         </div>
                     </div>
                 </div>  
@@ -61,15 +66,27 @@
                     <div class="checkbox-filter-section-categories">
                         <span><h3>Catégories</h3></span>
                         <div class="checkbox-filter-categories-list">
-                            <label class="checkbox-filter-container">Test 1
+                            <label class="checkbox-filter-container">Joie
                                 <input type="checkbox" name="categories">
                                 <span class="checkbox-filter"></span>
                             </label>
-                            <label class="checkbox-filter-container">Test 1
+                            <label class="checkbox-filter-container">Colère
                                 <input type="checkbox" name="categories">
                                 <span class="checkbox-filter"></span>
                             </label>
-                            <label class="checkbox-filter-container">Test 1
+                            <label class="checkbox-filter-container">Tristesse
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Peur
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Dégoût
+                                <input type="checkbox" name="categories">
+                                <span class="checkbox-filter"></span>
+                            </label>
+                            <label class="checkbox-filter-container">Surprise
                                 <input type="checkbox" name="categories">
                                 <span class="checkbox-filter"></span>
                             </label>
@@ -102,45 +119,61 @@
                                 <input type="checkbox" name="color">
                                 <span class="checkbox-filter-color cbfc-grey"></span>
                             </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-white"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-purple"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-lightblue"></span>
+                            </label>
+                            <label class="checkbox-filter-color-container">
+                                <input type="checkbox" name="color">
+                                <span class="checkbox-filter-color cbfc-lightgreen"></span>
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div class="articles-container">
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
-                        <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-picture"><img src="static/img/joy.png" alt="Image représentant l'exaltation"></div>
+                        <div class="article-name"><span>Exaltation</span></div>
+                        <div class="article-size"><span>L</span></div>
+                        <div class="article-price"><span>200€</span></div>
                     </a>
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-picture"><img src="static/img/happy.png" alt="Image représentant le bonheur"></div>
+                        <div class="article-name"><span>Bonheur</span></div>
                         <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-price"><span>49,99€</span></div>
                     </a>
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
-                        <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-picture"><img src="static/img/beatitude.png" alt="Image représentant la béatitude"></div>
+                        <div class="article-name"><span>Béatitude</span></div>
+                        <div class="article-size"><span>S</span></div>
+                        <div class="article-price"><span>12.99€</span></div>
                     </a>
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
+                        <div class="article-picture"><img src="static/img/pride.png" alt="Image représentant la fierté ou le contentement"></div>
+                        <div class="article-name"><span>Fierté</span></div>
                         <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-price"><span>145€</span></div>
                     </a>
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
-                        <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-picture"><img src="static/img/surprised.png" alt="Image représentant la surprise"></div>
+                        <div class="article-name"><span>Surpris</span></div>
+                        <div class="article-size"><span>S</span></div>
+                        <div class="article-price"><span>5,99€</span></div>
                     </a>
                     <a href="product.html" class="article">
-                        <div class="article-picture"><img src="" alt=""></div>
-                        <div class="article-name"><span>First article</span></div>
-                        <div class="article-size"><span>M</span></div>
-                        <div class="article-price"><span>99€</span></div>
+                        <div class="article-picture"><img src="static/img/tenderness.png" alt="Image représentant l'attendrissement"></div>
+                        <div class="article-name"><span>Attendrie</span></div>
+                        <div class="article-size"><span>S</span></div>
+                        <div class="article-price"><span>9,99€</span></div>
                     </a>
                     <div class="show-more">
                         <input type="button" value="Voir plus de résultats">

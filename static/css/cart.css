@@ -37,6 +37,11 @@ main {
     background-color: gray;
 }
 
+.article-picture img {
+    width: inherit;
+    height: inherit;
+}
+
 .article-information {
     height: 150px;
     display: flex;
@@ -126,7 +131,6 @@ main {
 .order-summary-coupon input:focus{   
    outline: none;
 }
-
 
 .order-summary-subtotal {
     display: flex;
