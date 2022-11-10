@@ -381,6 +381,10 @@
         padding: 3em !important;
     }
 
+    .desc-container h1 {
+        text-align: center;
+    }
+
     .desc-container p {
         text-align: center;
     }
