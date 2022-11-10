@@ -90,7 +90,6 @@ main {
 }
 
 .order-information-line {
-    margin-top: 20px;
     display: block;
     width: 100%;
     height: 1px;
@@ -208,6 +207,57 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-top: 20px;
+}
+
+.order-information-section p {
+    display: none;
+    margin-bottom: 10px;
+    color: #909090;
+}
+
+.order-information-section p:target {
+    display: block;
+}
+
+.show {
+    display: none;
+}
+
+.show-label .minus {
+    display: none;
+}
+
+.order-information-section-content {
+    display: none;
+}
+
+.show:checked ~ .order-information-section-content {
+    display: block;
+}
+
+.show:checked ~ .show-label .minus {
+    display: block;
+}
+
+.show:checked ~ .show-label .plus {
+    display: none;
+}
+
+.order-information-section-title {
+    font-size: 16px;
+    color: #909090;
+    font-weight: 600;
+}
+
+.plus {
+    font-size: 30px;
+    color: #909090;
+}
+
+.minus {
+    font-size: 30px;
+    color: #909090;
 }
 
 @media all and (width < 1200px) {
